@@ -1,0 +1,27 @@
+.Navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.HeaderLogo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.NavbarItem {
+  float: right;
+}
+
+.ListItem {
+  display: block;
+  color: #656565;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: black;
+}
