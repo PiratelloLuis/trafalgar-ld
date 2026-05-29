@@ -1,5 +1,7 @@
 import HeaderPage from "../components/Header/HeaderPage";
+import ServicesSection from "../components/Services/ServicesSection";
 import "../components/Header/HeaderStyle.css";
+import "../components/Services/ServicesStyle.css";
 import "../global.css";
 export default function LandingPage() {
   return (
@@ -10,7 +12,6 @@ export default function LandingPage() {
       </head>
       <body>
         <HeaderPage />
-        <h1>Teste</h1>
       </body>
     </html>
   );
