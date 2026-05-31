@@ -1,0 +1,32 @@
+.CardContainer {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 350px;
+  height: 350px;
+  text-align: left;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.015);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.ImageSection {
+  padding: 40px 20px 20px 20px;
+}
+
+.CardTitle {
+  padding-left: 10px;
+}
+
+.CardParagraph {
+  font-weight: lighter;
+  padding: 0px 10px 0px 10px;
+  max-width: 266px;
+  max-height: 84px;
+  color: #949494;
+  margin-top: 50px;
+}
+
+.CardContainer:hover {
+  transform: translateY(-10px);
+}

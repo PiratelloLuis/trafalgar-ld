@@ -5,8 +5,62 @@
   padding: 0 16px;
 }
 
-.ServicesSection {
+.ServicesText {
   border: 16px;
-  justify-content: center;
+  margin-top: 250px;
   padding: 30px;
+}
+
+.SectionTextTitle {
+  justify-self: center;
+  font-weight: lighter;
+}
+
+.Underline {
+  justify-self: center;
+}
+
+.ServicesParagraph {
+  justify-self: center;
+  max-width: 92ch;
+  color: #949494;
+  text-align: center;
+}
+
+.CardSection {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.ServiceButtons {
+  background-color: #fff;
+  border: 2px solid #5d9df7;
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  color: #5d9df7;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.ServicesDecoration {
+  display: block;
+  margin-left: auto;
+  margin-right: -40px;
+  position: relative;
+  top: -470px;
+  margin-bottom: -130px;
+  z-index: -1;
+}
+.ServiceButtons:hover {
+  transform: translateY(-10px);
 }
