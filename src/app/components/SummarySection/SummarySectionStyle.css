@@ -1,0 +1,100 @@
+.page-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 250px;
+  padding: 0 16px;
+}
+
+.header-healthcare-text {
+  float: right;
+  position: relative;
+  left: -100px;
+}
+
+.download-app-text {
+  float: none;
+  position: relative;
+  max-width: 50%;
+  right: -200px;
+}
+
+.download-section {
+  margin-top: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.section-title {
+  width: 350px;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.section-download-title {
+  width: 250px;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.header-img {
+  position: relative;
+  margin: 0 auto;
+  right: -100px;
+}
+
+.download-img {
+  position: static;
+  margin: 0;
+  max-width: 45%;
+  height: auto;
+}
+
+.download-app-text {
+  order: 1;
+}
+.download-img {
+  order: 2;
+}
+
+.underline {
+  position: relative;
+  font-weight: bolder;
+  top: -10px;
+}
+
+.section-paragraph {
+  width: 350px;
+  color: #7d7987;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.section-button {
+  background-color: #fff;
+  border: 2px solid #5d9df7;
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  color: #5d9df7;
+  margin-top: 50px;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.section-button span {
+  font-weight: bolder;
+}
+
+.section-button:hover {
+  transform: translateY(-10px);
+  background-color: #5d9df7;
+  border: 2px solid #fff;
+  color: #fff;
+}

@@ -63,4 +63,7 @@
 }
 .ServiceButtons:hover {
   transform: translateY(-10px);
+  background-color: #5d9df7;
+  border: 2px solid #fff;
+  color: #fff;
 }
