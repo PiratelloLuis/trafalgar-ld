@@ -15,7 +15,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .Banner {
@@ -40,10 +43,12 @@
 }
 
 .HeaderLogo {
-  position: absolute;
+  position: static;
   width: 130px;
   height: 41px;
-  left: 191px;
+  margin: 0;
+  margin-right: auto;
+  z-index: 1;
 }
 
 .HeaderTextButton {
@@ -72,8 +77,12 @@
 }
 
 .NavbarItem {
-  float: right;
   font-size: 14px;
+  display: inline-block;
+}
+
+.Navbar {
+  flex-wrap: wrap;
 }
 
 .ListItem {

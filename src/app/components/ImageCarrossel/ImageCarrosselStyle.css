@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.carrossel-underline {
+  font-weight: bolder;
+  margin-top: 8px;
+}
+
 .carrossel-section {
   justify-self: center;
 }

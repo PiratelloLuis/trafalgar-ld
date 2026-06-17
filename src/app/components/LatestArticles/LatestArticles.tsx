@@ -5,7 +5,7 @@ export default function LatestArticles() {
       <section className="latest-article">
         <section className="text-section">
           <h1 className="section-text-title">Check out our latest article</h1>
-          <div className="underline">________</div>
+          <div className="latest-underline">________</div>
         </section>
         <section className="card-section">
           <ArticleCards

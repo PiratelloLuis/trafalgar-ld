@@ -58,7 +58,7 @@
   order: 2;
 }
 
-.underline {
+.summary-underline {
   position: relative;
   font-weight: bolder;
   top: -10px;
