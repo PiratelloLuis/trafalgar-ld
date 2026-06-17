@@ -3,15 +3,23 @@
 import Image from "next/image";
 import React from "react";
 
-// Static data belongs outside the component so it does not recreate on every render
-const cards = [
+type Card = {
+  currentIndex: number;
+  image: string;
+  title: string;
+  description: string;
+};
+
+const cards: Card[] = [
   {
-    image: "https://unsplash.com",
+    currentIndex: 0,
+    image: "/rectangle.svg",
     title: "Card 1",
     description: "Info which directs to the other page.",
   },
   {
-    image: "https://unsplash.com",
+    currentIndex: 1,
+    image: "/rectangle.svg",
     title: "Card 2",
     description: "Info which directs to the other page.",
   },
@@ -32,9 +40,7 @@ export default function ImageCarrossel() {
 
   React.useEffect(() => {
     if (currentIndex > cards.length - 1) {
-      console.log(currentIndex);
       setCurrentIndex(0);
-      console.log("hi");
     }
   }, [currentIndex]);
 
@@ -46,24 +52,14 @@ export default function ImageCarrossel() {
           style={{ position: "relative", width: 1120, height: 425 }}
         >
           <Image
-            src="/rectangle.svg"
+            src={cards[currentIndex].image}
             width={1120}
             height={425}
-            alt="Rectangle carrossel"
+            alt={`Rectangle carrossel ${currentIndex + 1}`}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
 
-          <div
-            className="carrossel-overlay-content"
-            style={{
-              position: "absolute",
-              inset: 0,
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <div className="carrossel-overlay-content">
             <h1 className="carrossel-title">What our customers are saying</h1>
             <div className="underline">____</div>
 

@@ -21,6 +21,7 @@
 .Banner {
   display: flex;
   gap: 200px;
+  position: relative;
 }
 
 .ImageDecoration {
@@ -32,8 +33,10 @@
 .BannerImage {
   justify-self: left;
   position: absolute;
-  width: 33%;
+  right: 0;
+  top: -100px;
   height: auto;
+  z-index: 0;
 }
 
 .HeaderLogo {
@@ -75,6 +78,7 @@
 
 .ListItem {
   display: block;
+  font-weight: bold;  
   color: #656565;
   text-align: center;
   padding: 14px 16px;

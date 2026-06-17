@@ -6,6 +6,15 @@
   padding: 0 16px;
 }
 
+.carrossel-overlay-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .carrossel-section {
   justify-self: center;
 }

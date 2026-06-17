@@ -56,7 +56,7 @@ function HeaderPage() {
           <div className="ImageContainer">
             <Image
               className="BannerImage"
-              src="/docs.png"
+              src="/BannerImage.svg"
               alt="Doctors drawing"
               width={693}
               height={550}
