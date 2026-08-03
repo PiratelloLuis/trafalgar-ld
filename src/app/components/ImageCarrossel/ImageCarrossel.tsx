@@ -1,27 +1,27 @@
 "use client";
-
 import Image from "next/image";
 import React from "react";
 
 type Card = {
-  currentIndex: number;
-  image: string;
-  title: string;
+  avatar: string;
+  name: string;
+  role: string;
   description: string;
 };
 
 const cards: Card[] = [
   {
-    currentIndex: 0,
-    image: "/rectangle.svg",
-    title: "Card 1",
-    description: "Info which directs to the other page.",
+    avatar: "/edward.jpg",
+    name: "Edward Newgate",
+    role: "Founder Circle",
+    description:
+      "Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely",
   },
   {
-    currentIndex: 1,
-    image: "/rectangle.svg",
-    title: "Card 2",
-    description: "Info which directs to the other page.",
+    avatar: "/gustavo.png",
+    name: "Gustavo Coutinho",
+    role: "Customer",
+    description: "Thats the best website that I ever seen",
   },
 ];
 
@@ -38,46 +38,79 @@ export default function ImageCarrossel() {
     );
   };
 
-  React.useEffect(() => {
-    if (currentIndex > cards.length - 1) {
-      setCurrentIndex(0);
-    }
-  }, [currentIndex]);
+  const currentCard = cards[currentIndex];
 
   return (
     <div className="page-container">
       <section className="carrossel-section">
-        <div
-          className="carrossel-hero-container"
-          style={{ position: "relative", width: 1120, height: 425 }}
-        >
-          <Image
-            src={cards[currentIndex].image}
-            width={1120}
-            height={425}
-            alt={`Rectangle carrossel ${currentIndex + 1}`}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-
+        <div className="carrossel-hero-container">
           <div className="carrossel-overlay-content">
-            <h1 className="carrossel-title">What our customers are saying</h1>
-            <div className="carrossel-underline modern-underline modern-underline--centered" aria-hidden="true" />
+            <h1 className="carrossel-title">What our customer are saying</h1>
+            <div
+              className="carrossel-underline modern-underline modern-underline--centered"
+              aria-hidden="true"
+            />
 
-            <section className="customer-section">
-              <div className="customer-card">
-                <h2>{cards[currentIndex].title}</h2>
-                <p>{cards[currentIndex].description}</p>
+            <div className="carrossel-customer">
+              <div className="carrossel-avatar">
+                <Image
+                  src={currentCard.avatar}
+                  width={200}
+                  height={200}
+                  alt={currentCard.name}
+                />
               </div>
-            </section>
+
+              <div className="carrossel-info">
+                <h2 className="carrossel-customer-name">{currentCard.name}</h2>
+                <p className="carrossel-customer-role">{currentCard.role}</p>
+              </div>
+
+              <p className="carrossel-quote">"{currentCard.description}"</p>
+            </div>
           </div>
         </div>
 
-        <div className="carrossel-controls">
-          <button onClick={handlePrev} aria-label="Previous">
-            Prev
+        <div className="carrossel-nav-row">
+          <button
+            type="button"
+            className="carrossel-nav carrossel-nav--prev"
+            onClick={handlePrev}
+            aria-label="Previous"
+          >
+            <Image
+              src="/arrow.svg"
+              width={15}
+              height={9}
+              alt=""
+              className="carrossel-nav-icon carrossel-nav-icon--prev"
+            />
           </button>
-          <button onClick={handleNext} aria-label="Next">
-            Next
+
+          <div className="carrossel-dots">
+            {cards.map((_, index) => (
+              <span
+                key={index}
+                className={`carrossel-dot ${
+                  index === currentIndex ? "carrossel-dot--active" : ""
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            type="button"
+            className="carrossel-nav carrossel-nav--next"
+            onClick={handleNext}
+            aria-label="Next"
+          >
+            <Image
+              src="/arrow.svg"
+              width={15}
+              height={9}
+              alt=""
+              className="carrossel-nav-icon"
+            />
           </button>
         </div>
       </section>

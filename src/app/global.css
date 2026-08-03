@@ -5,9 +5,9 @@
 .modern-underline {
   display: block;
   width: 56px;
-  border-bottom: 3px solid #000000;
-    margin-top: 8px;
-    line-height: 0;
+  border-bottom: 3px solid var(--underline-color, #000000);
+  margin-top: 8px;
+  line-height: 0;
 }
 
 .modern-underline--centered {

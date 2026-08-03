@@ -1,5 +1,5 @@
 .card-container {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   width: 350px;
   height: 512px;
   box-sizing: border-box;
@@ -24,11 +24,10 @@
 }
 
 .button-div button {
-
   background-color: transparent;
   cursor: pointer;
   border: none;
-  color: #458FF6;
+  color: #458ff6;
   font-size: 18px;
 }
 
