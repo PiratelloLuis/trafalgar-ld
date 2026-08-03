@@ -7,13 +7,16 @@
 }
 
 .section-text-title {
-  justify-self: center;
+  text-align: center;
   font-size: 36px;
 }
 
+.text-section {
+  text-align: center;
+}
+
 .latest-underline {
-  justify-self: center;
-  font-weight: bolder;
+  margin-bottom: 50px;
 }
 
 .card-section {
@@ -23,6 +26,26 @@
   justify-content: center;
   column-gap: 30px;
   width: 100%;
+}
+
+.final-section-button {
+  background-color: #fff;
+  border: 2px solid #5d9df7;
+  width: 180px;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  border-radius: 50px;
+  color: #5d9df7;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.final-section-button:hover {
+  transform: translateY(-10px);
+  background-color: #5d9df7;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 

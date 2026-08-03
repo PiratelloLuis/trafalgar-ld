@@ -61,7 +61,7 @@ export default function ImageCarrossel() {
 
           <div className="carrossel-overlay-content">
             <h1 className="carrossel-title">What our customers are saying</h1>
-            <div className="carrossel-underline">____</div>
+            <div className="carrossel-underline modern-underline modern-underline--centered" aria-hidden="true" />
 
             <section className="customer-section">
               <div className="customer-card">

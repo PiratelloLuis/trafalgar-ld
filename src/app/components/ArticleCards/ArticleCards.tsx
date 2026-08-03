@@ -31,13 +31,14 @@ export default function ArticleCards({
         <h2 className="card-title">{title}</h2>
         <p className="card-paragraph">{desc}</p>
         <div className="button-div">
-          <button>{button}</button>
+          <button>{button}
           <Image
           src={icon}
           width={15}
           height={15}
           alt="Icon"
           />
+          </button>
         </div>
       </div>
     </div>

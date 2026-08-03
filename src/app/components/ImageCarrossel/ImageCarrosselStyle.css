@@ -16,10 +16,9 @@
 }
 
 .carrossel-underline {
-  font-weight: bolder;
-  margin-top: 8px;
+  --underline-color: #fff;
+  width: 40px;
 }
-
 .carrossel-section {
   justify-self: center;
 }

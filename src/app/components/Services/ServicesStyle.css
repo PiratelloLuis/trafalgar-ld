@@ -9,15 +9,11 @@
   border: 16px;
   margin-top: 250px;
   padding: 30px;
+  text-align: center;
 }
 
 .SectionTextTitle {
-  justify-self: center;
   font-weight: lighter;
-}
-
-.services-underline {
-  justify-self: center;
 }
 
 .ServicesParagraph {

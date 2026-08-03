@@ -12,7 +12,7 @@ export default function SummarySection() {
         />
         <section className="header-healthcare-text">
           <h2 className="section-title">Leading healthcare providers</h2>
-          <div className="summary-underline">_______</div>
+          <div className="summary-underline modern-underline" aria-hidden="true" />
           <p className="section-paragraph">
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone. To us, it’s not just
@@ -38,7 +38,7 @@ export default function SummarySection() {
         />
         <section className="download-app-text">
           <h2 className="section-download-title">Download our mobile apps</h2>
-          <div className="summary-underline">_______</div>
+          <div className="summary-underline modern-underline" aria-hidden="true" />
           <p className="section-paragraph">
             Our dedicated patient engagement app and web portal allow you to
             access information instantaneously (no tedeous form, long calls, or

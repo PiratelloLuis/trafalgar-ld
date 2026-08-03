@@ -8,22 +8,14 @@ import "../components/Services/ServicesStyle.css";
 import "../components/SummarySection/SummarySectionStyle.css";
 import "../components/ImageCarrossel/ImageCarrosselStyle.css";
 import "../components/LatestArticles/LatestArticles.css";
-import "../global.css";
-
 export default function LandingPage() {
   return (
-    <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Trafalgar</title>
-      </head>
-      <body>
-        <HeaderPage />
-        <ServicesSection />
-        <SummarySection />
-        <ImageCarrossel />
-        <LatestArticles />
-      </body>
-    </html>
+    <>
+      <HeaderPage />
+      <ServicesSection />
+      <SummarySection />
+      <ImageCarrossel />
+      <LatestArticles />
+    </>
   );
 }

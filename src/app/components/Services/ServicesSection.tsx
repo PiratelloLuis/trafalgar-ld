@@ -16,7 +16,7 @@ export default function ServicesSection() {
         <section className="ServicesSection">
           <section className="ServicesText">
             <h2 className="SectionTextTitle">Our Services</h2>
-            <div className="services-underline">________</div>
+            <div className="services-underline modern-underline modern-underline--centered" aria-hidden="true" />
             <p className="ServicesParagraph">
               We provide to you the best choiches for you. Adjust it to your
               health needs and make sure your undergo treatment with our highly
