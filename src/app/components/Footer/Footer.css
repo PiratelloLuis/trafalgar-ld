@@ -61,6 +61,11 @@
   font-size: 18px;
   line-height: 38px;
   font-weight: lighter;
+  cursor: pointer;
+}
+
+.footer-list-item:hover {
+  color: #f5f5f5d0;
 }
 
 .footer-list {
